@@ -1,0 +1,174 @@
+body {
+	/*background-color:red; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+.clock {
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+	border-radius: 50%;
+	border: 15px solid black;
+	position: relative;
+}
+
+.clock .time{
+	--n: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transform: rotate(var(--n));
+}
+
+.clock .dot{
+	--n: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transform: rotate(var(--n));
+}
+
+.clock .z1 { --n: 30deg; }
+.clock .z2 { --n: 60deg; }
+.clock .z3 { --n: 90deg; }
+.clock .z4 { --n: 120deg; }
+.clock .z5 { --n: 150deg; }
+.clock .z6 { --n: 180deg; }
+.clock .z7 { --n: 210deg; }
+.clock .z8 { --n: 240deg; }
+.clock .z9 { --n: 270deg; }
+.clock .z10 { --n: 300deg; }
+.clock .z11 { --n: 330deg; }
+.clock .z12 { --n: 360deg; }
+
+.clock .z1 .r1 { transform: rotate(-30deg); font-size: 20px;}
+.clock .z2 .r2 { transform: rotate(-60deg); font-size: 20px;}
+.clock .z3 .r3 { transform: rotate(-90deg); font-size: 20px;}
+.clock .z4 .r4 { transform: rotate(-120deg); font-size: 20px;}
+.clock .z5 .r5 { transform: rotate(-150deg); font-size: 20px;}
+.clock .z6 .r6 { transform: rotate(-180deg); font-size: 20px;}
+.clock .z7 .r7 { transform: rotate(-210deg); font-size: 20px;}
+.clock .z8 .r8 { transform: rotate(-240deg); font-size: 20px;}
+.clock .z9 .r9 { transform: rotate(-270deg); font-size: 20px;}
+.clock .z10 .r10 { transform: rotate(-300deg); font-size: 20px;}
+.clock .z11 .r11 { transform: rotate(-330deg); font-size: 20px;}
+.clock .z12 .r12 { font-size: 20px; }
+
+.clock .r { font-size: 30px; }
+
+
+
+.clock .hour{
+	--a:0;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	width: 10px;
+	height: 35%;
+	border-radius: 30%;
+	background-color: black;
+	transform-origin: bottom;
+	transform: rotate(calc(var(--a)*30deg));
+}
+
+.clock .min{
+	--b:0;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	width: 7px;
+	height: 45%;
+	border-radius: 30%;
+	background-color: black;
+	transform-origin: bottom;
+	transform: rotate(calc(var(--b)*6deg));
+}
+
+.clock .sec{
+	--c:0;
+	position: absolute;
+	left: 50%;
+	bottom: 50%;
+	width: 2px;
+	height: 45%;
+	background-color: red;
+	transform-origin: bottom;
+	transform: rotate(calc(var(--c)*6deg));
+}
+
+#displayCountry1{
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	top: 10px;
+	left: 550px;
+	font-size: 80px;
+	align-self: center;
+}
+
+#mySelect1{
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	top: 65px;
+	left: 10px;
+}
+
+#button1{
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	top: 100px;
+	left: 10px;
+}
+
+#p1{
+	width: 250px;
+	height: 30px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background-color: blue;
+	font-size: 22px;
+}
+
+#displayCountry2{
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	top: 10px;
+	left: 550px;
+	font-size: 80px;
+}
+
+#mySelect2{
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	top: 65px;
+	right: 10px;
+}
+
+#button2{
+	width: 100px;
+	height: 30px;
+	position: absolute;
+	top: 100px;
+	right: 10px;
+}
+
+#p2{
+	width: 275px;
+	height: 30px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background-color: blue;
+	font-size: 22px;
+}
