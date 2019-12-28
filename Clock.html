@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>World Clock</title>
+	<script defer src="clock.js"></script>
+	<link rel="stylesheet" href="clock.css">
+</head>
+<body>
+
+	<p id="p1">Please select your country</p>
+
+<select id="mySelect1" autofocus>
+  <option value="London">London</option>
+  <option value="India">India</option>
+  <option value="Japan">Japan</option>
+  <option value="USA">USA</option>
+</select>
+
+<button id="button1" onclick="myFunction1()">Submit</button>
+<p id="displayCountry1"></p>
+
+
+
+<p id="p2" style="visibility: hidden;">Please select another country</p>
+
+<select id="mySelect2" autofocus style="visibility: hidden;">
+  <option value="London">London</option>
+  <option value="India">India</option>
+  <option value="Japan">Japan</option>
+  <option value="USA">USA</option>
+</select>
+
+<button id="button2" style="visibility: hidden;" onclick="myFunction2()">Submit</button>
+<p id="displayCountry2" style="visibility: hidden;"></p>
+
+
+
+<div id="cc" class="clock" style="display:none;">
+		<div class="hour" Hours></div>
+		<div class="min" Minutes></div>
+		<div class="sec" Seconds></div>
+		<div class="time z1"><p class="r1">1</p></div>
+		<div class="time z2"><p class="r2">2</p></div>
+		<div class="time z3"><p class="r3">3</p></div>
+		<div class="time z4"><p class="r4">4</p></div>
+		<div class="time z5"><p class="r5">5</p></div>
+		<div class="time z6"><p class="r6">6</p></div>
+		<div class="time z7"><p class="r7">7</p></div>
+		<div class="time z8"><p class="r8">8</p></div>
+		<div class="time z9"><p class="r9">9</p></div>
+		<div class="time z10"><p class="r10">10</p></div>
+		<div class="time z11"><p class="r11">11</p></div>
+		<div class="time z12"><p class="r12">12</p></div>
+
+		<div class="dot z1"><p class="r">.</p></div>
+		<div class="dot z2"><p class="r">.</p></div>
+		<div class="dot z3"><p class="r">.</p></div>
+		<div class="dot z4"><p class="r">.</p></div>
+		<div class="dot z5"><p class="r">.</p></div>
+		<div class="dot z6"><p class="r">.</p></div>
+		<div class="dot z7"><p class="r">.</p></div>
+		<div class="dot z8"><p class="r">.</p></div>
+		<div class="dot z9"><p class="r">.</p></div>
+		<div class="dot z10"><p class="r">.</p></div>
+		<div class="dot z11"><p class="r">.</p></div>
+		<div class="dot z12"><p class="r">.</p></div>
+</div>
+
+</body>
+</html>
